@@ -32,7 +32,7 @@ const refreshCookieMaxAge = parseDurationMs(env.JWT_REFRESH_EXPIRES, 7 * 24 * 60
 
 const refreshCookieOptions = {
   httpOnly: true,
-  secure: env.COOKIE_SECURE,
+  secure: true,
   sameSite: 'none' as const,
   maxAge: refreshCookieMaxAge,
   path: '/',
