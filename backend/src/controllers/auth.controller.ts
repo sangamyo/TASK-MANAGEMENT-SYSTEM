@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import express, { Request, Response } from 'express';
 
 import env from '../config/env';
 import { asyncHandler } from '../utils/asyncHandler';

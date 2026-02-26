@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from 'express';
+import express, { NextFunction, Request, Response } from 'express';
 import { AnyZodObject, ZodError, ZodIssue } from 'zod';
 
 import AppError from '../utils/appError';
