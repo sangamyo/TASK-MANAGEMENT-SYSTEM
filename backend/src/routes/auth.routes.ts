@@ -1,4 +1,4 @@
-import { Router } from 'express';
+import express, { Router } from 'express';
 
 import {
   loginController,
@@ -10,7 +10,7 @@ import { authenticate } from '../middleware/authMiddleware';
 import { validateResource } from '../middleware/validateResource';
 import { loginSchema, registerSchema } from '../types/auth';
 
-const router = Router();
+const router = express.Router();
 
 router.post('/register', validateResource(registerSchema), registerController);
 router.post('/login', validateResource(loginSchema), loginController);

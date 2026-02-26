@@ -1,4 +1,4 @@
-import { Router } from 'express';
+import express, { Router } from 'express';
 
 import {
   createTaskController,
@@ -17,7 +17,7 @@ import {
   updateTaskSchema,
 } from '../types/task';
 
-const router = Router();
+const router = express.Router();
 
 router.use(authenticate);
 
